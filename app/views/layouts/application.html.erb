@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Petone Real Food Group</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <header>
+    <h1>Petone Real Food Group</h1>
+    <p>This is a food group. Like meat. Or fruit and veges. I am being vague and nonsensical.</p>
+  </header>
+  <nav>
+    <p><%= link_to "Order form", new_order_path %></p>
+    <p><%= link_to "View order", order_index_path %></p>
+  </nav>
+
+<%= yield %>
+
+</body>
+</html>

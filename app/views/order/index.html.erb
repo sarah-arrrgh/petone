@@ -1,0 +1,13 @@
+<h2>Your orders</h2>
+
+<% @orders.each do |o| %>
+Member name: <%= o.member_name %><br />
+Member number: <%= o.member_number %><br />
+Apples kg: <%= o.apples_kg %><br />
+Oranges kg: <%= o.oranges_kg %><br />
+Broccoli ct: <%= o.broccoli_ct %><br />
+<%= link_to "Edit", edit_order_path(o.id) %>
+<%= link_to "Delete" %>
+<br /><br />
+<% end %>
+

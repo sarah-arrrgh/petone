@@ -1,0 +1,11 @@
+<h2>Order form</h2>
+<p>This is an order form</p>
+
+<%= form_for :order, url:order_index_path do |f| %>
+  Name: <%= f.text_field :member_name %><br />
+  Member number : <%= f.number_field :member_number %><br />
+  Apples : <%= f.number_field :apples_kg %><br />
+  Oranges : <%= f.number_field :oranges_kg %><br />
+  Broccoli : <%= f.number_field :broccoli_ct %><br />
+  <%= f.submit %>
+<% end %>
